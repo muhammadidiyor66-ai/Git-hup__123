@@ -93,3 +93,49 @@ body.dark {
 .o {
   font-weight: 600;
 }
+/* Mobil qurilmalar uchun (Telefonlar) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Planshetlar uchun (Tablets) */
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    
+    .grid-system {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 talik qator */
+        gap: 15px;
+    }
+}
+
+/* Rasmlar va videolar uchun umumiy qoida */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
